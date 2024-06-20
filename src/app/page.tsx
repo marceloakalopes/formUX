@@ -1,13 +1,14 @@
-
 export default function Page() {
   return (
-    <div className="relative flex flex-col items-center w-full min-h-screen max-h-full bg-[url('/face.png')] bg-cover bg-center ">
+    <div className="relative flex flex-col items-center w-full min-h-screen max-h-full bg-[url('/face.png')] bg-cover bg-center">
       {/* Blurred Overlay */}
-      <div className="absolute inset-0 bg-black/75 backdrop-blur-3xl"></div>
+      <div
+        className="absolute inset-0 bg-black/75 backdrop-blur-3xl"
+        style={{ willChange: "transform" }}
+      ></div>
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center w-full min-h-screen max-h-full p-6">
-        {/* Example content */}
         <div className="flex flex-col items-center mb-12">
           <img
             src="/face.png"
