@@ -1,17 +1,16 @@
 import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
-import "./globals.css";
 
 import { cn } from "@/lib/utils";
 
 const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
-})
+});
 
 export const metadata: Metadata = {
-  title: "Links - @lopestalks",
-  description: "Links para redes sociais e contato profissional do Marcelo Lopes",
+  title: "Mentoria M3",
+  description: "Menrtoria pra estudantes",
 };
 
 export default function RootLayout({
@@ -26,7 +25,6 @@ export default function RootLayout({
           "min-h-screen bg-background font-sans antialiased",
           fontSans.variable
         )}
-
       >
         {children}
       </body>
