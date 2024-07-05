@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef } from "react";
+import DropDown from "./_components/DropDown";
 
 export default function Page() {
   const offerRef = useRef<HTMLDivElement>(null);
@@ -168,18 +169,14 @@ export default function Page() {
           </button>
         </div>
       </section>
-      <section className="bg-[#0C1214] py-12">
+      <section id="offer" ref={offerRef} className="bg-[#0C1214] py-12">
         <div>
           <h2 className="text-white px-6 text-center font-medium text-2xl">
             Adquira o Método RP30 e{" "}
             <span className="font-bold">comece a se organizar ainda hoje:</span>
           </h2>
 
-          <div
-            id="offer"
-            ref={offerRef}
-            className="relative flex flex-col items-center my-10 mx-4 py-10 border rounded-xl border-gray-600 bg-[#1F201F]"
-          >
+          <div className="relative flex flex-col items-center my-10 mx-4 py-10 border rounded-xl border-gray-600 bg-[#1F201F]">
             <div className="absolute top-[-25px] flex gap-3 bg-white py-3 px-6 rounded-xl shadow-[#ffff_0px_0px_15px_0px]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -206,7 +203,8 @@ export default function Page() {
               R$<span className="text-9xl">29</span>,97
             </h2>
             <a
-              href="#"
+            target="_blank"
+              href="https://pay.kiwify.com.br/ULC5bvO"
               className="text-white text-lg font-medium rounded-lg font-xl my-4 px-12 py-3 bg-[#0D9300]"
             >
               COMEÇAR AGORA
@@ -223,6 +221,39 @@ export default function Page() {
           </div>
         </div>
       </section>
+      <section className="bg-[#0C1214] pb-12">
+        <h2 className="text-white text-center text-2xl">
+          Perguntas Frequentes
+        </h2>
+        <p className="text-gray-500 text-center tracking-[.7em]">
+          Tire Dúvidas
+        </p>
+        <div className="mt-4 mx-4 flex flex-col gap-3">
+          <DropDown
+            question="Serve para iniciantes?"
+            answer="Sim! Se você não sabe nada ainda sobre o tema, ou ainda se considera iniciante ou intermediário/avançado, esse treinamento servirá 100% para você!"
+          />
+          <DropDown
+            question="Só vou ter resultado depois de 30 dias?"
+            answer="Não, logo na primeira semana você já vai começar a ter resultados ao organizar o seu sistema. Ao final dos 30 dias você terá dobrado ou até triplicado sua produtividade e se verá livre do ciclo da improdutividade."
+          />
+          <DropDown
+            question="Por quanto tempo terei acesso?"
+            answer="Por 1 ano inteiro, a partir da data da compra. Você vai ter acesso a todas as aulas adicionais que entrarem no treinamento neste período."
+          />
+          <DropDown
+            question="Como faço para tirar dúvidas?"
+            answer="Você pode enviar seus comentários nas aulas, que o Marcelo estará respondendo."
+          />
+          <DropDown question="Quais são as formas de pagamento?" answer="Você pode pagar com cartão de crédito ou PIX." />
+          <DropDown question="Posso comprar depois?" answer="Sim, você poderá comprar posteriormente por R$ 97,00. Essa é uma promoção especial de lançamento e vai durar por pouco tempo." />
+        </div>
+      </section>
+      <footer>
+        <div className="bg-gray-950 text-white text-center py-6">
+          <p>© 2021 RP30 - Todos os direitos reservados</p>
+        </div>
+      </footer>
     </>
   );
 }
