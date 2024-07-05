@@ -191,11 +191,19 @@ export default function Page() {
             </div>
 
             <div className="relative flex flex-col items-center mb-6">
-              <p className="text-gray-400 font-semibold">de</p>
-              <h2 className="text-gray-400 text-xl text-end font-semibold">
-                R$<span className="text-6xl">97</span>,00
-              </h2>
-              <span className="absolute h-[4px] bg-gray-400 w-full top-[52px]"></span>
+              <div className="flex flex-col items-center mt-3 px-2 gap-5">
+                <h2 className="text-[#FFB980] text-2xl font-bold">
+                  O que você irá levar:
+                </h2>
+                <div className="flex flex-col items-start gap-2 px-5 text-white">
+                  <p>✔ Aula destrinchando o Método;</p>
+                  <p>✔ Mapa mental com insights da aula;</p>
+                  <p>✔ Desafio de implementação;</p>
+                  <p>✔ Teemplate do Desafio RP30;</p>
+                  <p>✔ E um segredo...</p>
+                </div>
+              </div>
+            
             </div>
 
             <p className="text-gray-400 font-semibold">Por apenas:</p>
@@ -203,7 +211,7 @@ export default function Page() {
               R$<span className="text-9xl">29</span>,97
             </h2>
             <a
-            target="_blank"
+              target="_blank"
               href="https://pay.kiwify.com.br/ULC5bvO"
               className="text-white text-lg font-medium rounded-lg font-xl my-4 px-12 py-3 bg-[#0D9300]"
             >
@@ -245,12 +253,18 @@ export default function Page() {
             question="Como faço para tirar dúvidas?"
             answer="Você pode enviar seus comentários nas aulas que o Marcelo estará respondendo."
           />
-          <DropDown question="Quais são as formas de pagamento?" answer="Você pode pagar com cartão de crédito ou PIX." />
-          <DropDown question="Posso adquirir depois?" answer="Sim, você poderá adquirir posteriormente por R$ 97,00. Essa é uma promoção especial de lançamento e vai durar por pouco tempo." />
+          <DropDown
+            question="Quais são as formas de pagamento?"
+            answer="Você pode pagar com cartão de crédito ou PIX."
+          />
+          <DropDown
+            question="Posso adquirir depois?"
+            answer="Sim, você poderá adquirir posteriormente por R$ 97,00. Essa é uma promoção especial de lançamento e vai durar por pouco tempo."
+          />
         </div>
       </section>
       <footer>
-        <div className="bg-gray-950 text-white text-center py-6">
+        <div className="bg-gray-950 text-white text-xs text-center py-6">
           <p>© Todos os direitos reservados | Marcelo Lopes</p>
         </div>
       </footer>
