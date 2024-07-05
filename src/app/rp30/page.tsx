@@ -19,7 +19,7 @@ export default function Page() {
           <img src="/banner.png" alt="" />
         </div>
 
-        <div className="flex flex-col items-center gap-0">
+        <div className="flex flex-col items-center justify-center gap-0">
           <h2 className="text-white text-center text-xl w-80 font-bold my-3">
             A rotina que você sempre sonhou está a 30 dias de se tornar
             realidade.
@@ -80,7 +80,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="grid max-md:grid-cols-1 max-lg:grid-cols-2 grid-cols-3 gap-6 bg-[#0C1214]">
+      <section className="grid grid-cols-1 gap-6 bg-[#0C1214]">
         <h1 className="px-4 text-white font-bold text-center text-xl">
           E se você pudesse eliminar 94.77% da sua procrastinação?
         </h1>
@@ -88,7 +88,7 @@ export default function Page() {
           Em até 30 dias você vai aprender a escapar da armadilha da
           improdutividade e finalmente...
         </p>
-        <div className="flex flex-col px-12 gap-4 mb-2">
+        <div className="flex max-md:items-start items-center flex-col px-12 gap-4 mb-2">
           <div className="flex gap-3 items-center">
             <img
               className="h-6 select-none"
