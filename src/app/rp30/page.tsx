@@ -21,7 +21,7 @@ export default function Page() {
 
         <div className="flex flex-col items-center gap-0">
           <h2 className="text-white text-center text-xl w-80 font-bold my-3">
-            A rotina que você sempre sonhou esta há 30 dias de se tornar
+            A rotina que você sempre sonhou está a 30 dias de se tornar
             realidade.
           </h2>
           <p className="text-white text-center max-w-80 mb-3">
@@ -231,7 +231,7 @@ export default function Page() {
         <div className="mt-4 mx-4 flex flex-col gap-3">
           <DropDown
             question="Serve para iniciantes?"
-            answer="Sim! Se você não sabe nada ainda sobre o tema, ou ainda se considera iniciante ou intermediário/avançado, esse treinamento servirá 100% para você!"
+            answer="Sim! Se você ainda não sabe nada sobre o tema, ou se considera iniciante ou intermediário/avançado, esse treinamento servirá 100% para você!"
           />
           <DropDown
             question="Só vou ter resultado depois de 30 dias?"
@@ -239,19 +239,19 @@ export default function Page() {
           />
           <DropDown
             question="Por quanto tempo terei acesso?"
-            answer="Por 1 ano inteiro, a partir da data da compra. Você vai ter acesso a todas as aulas adicionais que entrarem no treinamento neste período."
+            answer="Por 1 ano inteiro, a partir da data da compra. Você vai ter acesso a todas as aulas adicionais que entrarem no treinamento durante esse período."
           />
           <DropDown
             question="Como faço para tirar dúvidas?"
-            answer="Você pode enviar seus comentários nas aulas, que o Marcelo estará respondendo."
+            answer="Você pode enviar seus comentários nas aulas que o Marcelo estará respondendo."
           />
           <DropDown question="Quais são as formas de pagamento?" answer="Você pode pagar com cartão de crédito ou PIX." />
-          <DropDown question="Posso comprar depois?" answer="Sim, você poderá comprar posteriormente por R$ 97,00. Essa é uma promoção especial de lançamento e vai durar por pouco tempo." />
+          <DropDown question="Posso adquirir depois?" answer="Sim, você poderá adquirir posteriormente por R$ 97,00. Essa é uma promoção especial de lançamento e vai durar por pouco tempo." />
         </div>
       </section>
       <footer>
         <div className="bg-gray-950 text-white text-center py-6">
-          <p>© 2021 RP30 - Todos os direitos reservados</p>
+          <p>© Todos os direitos reservados | Marcelo Lopes</p>
         </div>
       </footer>
     </>
