@@ -199,7 +199,7 @@ export default function Page() {
                   <p>✔ Aula destrinchando o Método;</p>
                   <p>✔ Mapa mental com insights da aula;</p>
                   <p>✔ Desafio de implementação;</p>
-                  <p>✔ Teemplate do Desafio RP30;</p>
+                  <p>✔ Template do Desafio RP30;</p>
                   <p>✔ E um segredo...</p>
                 </div>
               </div>
