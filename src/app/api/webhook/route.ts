@@ -42,12 +42,13 @@ export async function POST(req: NextRequest) {
 
     // Check if the order status is "paid"
     if (order.order_status === 'paid') {
+      // Handle the payment
       console.log('Payment received for order:', order.order_id);
       return NextResponse.json({ status: 'ok' }, { status: 200 });
     }
 
     // If not paid, just return a 200 status
-    // return NextResponse.json({ status: 'ok' }, { status: 200 });
+    return NextResponse.json({ status: 'ok' }, { status: 200 });
 
   } catch (rateLimiterRes) {
     return NextResponse.json({ error: 'Too Many Requests' }, { status: 429 });

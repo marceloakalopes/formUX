@@ -29,7 +29,7 @@ export default function Page() {
         <div className="flex flex-col items-center w-full">
           <a
             href="mailto:lopestalks@gmail.com"
-            className="text-sm w-full py-5 text-center text-white bg-black bg-opacity-50 rounded-md hover:bg-opacity-75 ease-in-out transition-all duration-300"
+            className="text-sm w-full py-5 text-center text-white bg-black bg-opacity-50 hover:bg-opacity-75 ease-in-out transition-all duration-300"
           >
             E-mail profissional
           </a>
